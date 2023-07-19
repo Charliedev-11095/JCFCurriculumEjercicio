@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)http://html.phoenixcoded.net/resume-angular/mrlancer/resume.html -->
+<html lang="en" data-ng-app="resume" class="ng-scope">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		[uib-typeahead-popup].dropdown-menu {
+			display: block;
+		}
+	</style>
+	<style type="text/css">
+		.uib-time input {
+			width: 50px;
+		}
+	</style>
+	<style type="text/css">
+		[uib-tooltip-popup].tooltip.top-left>.tooltip-arrow,
+		[uib-tooltip-popup].tooltip.top-right>.tooltip-arrow,
+		[uib-tooltip-popup].tooltip.bottom-left>.tooltip-arrow,
+		[uib-tooltip-popup].tooltip.bottom-right>.tooltip-arrow,
+		[uib-tooltip-popup].tooltip.left-top>.tooltip-arrow,
+		[uib-tooltip-popup].tooltip.left-bottom>.tooltip-arrow,
+		[uib-tooltip-popup].tooltip.right-top>.tooltip-arrow,
+		[uib-tooltip-popup].tooltip.right-bottom>.tooltip-arrow,
+		[uib-tooltip-html-popup].tooltip.top-left>.tooltip-arrow,
+		[uib-tooltip-html-popup].tooltip.top-right>.tooltip-arrow,
+		[uib-tooltip-html-popup].tooltip.bottom-left>.tooltip-arrow,
+		[uib-tooltip-html-popup].tooltip.bottom-right>.tooltip-arrow,
+		[uib-tooltip-html-popup].tooltip.left-top>.tooltip-arrow,
+		[uib-tooltip-html-popup].tooltip.left-bottom>.tooltip-arrow,
+		[uib-tooltip-html-popup].tooltip.right-top>.tooltip-arrow,
+		[uib-tooltip-html-popup].tooltip.right-bottom>.tooltip-arrow,
+		[uib-tooltip-template-popup].tooltip.top-left>.tooltip-arrow,
+		[uib-tooltip-template-popup].tooltip.top-right>.tooltip-arrow,
+		[uib-tooltip-template-popup].tooltip.bottom-left>.tooltip-arrow,
+		[uib-tooltip-template-popup].tooltip.bottom-right>.tooltip-arrow,
+		[uib-tooltip-template-popup].tooltip.left-top>.tooltip-arrow,
+		[uib-tooltip-template-popup].tooltip.left-bottom>.tooltip-arrow,
+		[uib-tooltip-template-popup].tooltip.right-top>.tooltip-arrow,
+		[uib-tooltip-template-popup].tooltip.right-bottom>.tooltip-arrow,
+		[uib-popover-popup].popover.top-left>.arrow,
+		[uib-popover-popup].popover.top-right>.arrow,
+		[uib-popover-popup].popover.bottom-left>.arrow,
+		[uib-popover-popup].popover.bottom-right>.arrow,
+		[uib-popover-popup].popover.left-top>.arrow,
+		[uib-popover-popup].popover.left-bottom>.arrow,
+		[uib-popover-popup].popover.right-top>.arrow,
+		[uib-popover-popup].popover.right-bottom>.arrow,
+		[uib-popover-html-popup].popover.top-left>.arrow,
+		[uib-popover-html-popup].popover.top-right>.arrow,
+		[uib-popover-html-popup].popover.bottom-left>.arrow,
+		[uib-popover-html-popup].popover.bottom-right>.arrow,
+		[uib-popover-html-popup].popover.left-top>.arrow,
+		[uib-popover-html-popup].popover.left-bottom>.arrow,
+		[uib-popover-html-popup].popover.right-top>.arrow,
+		[uib-popover-html-popup].popover.right-bottom>.arrow,
+		[uib-popover-template-popup].popover.top-left>.arrow,
+		[uib-popover-template-popup].popover.top-right>.arrow,
+		[uib-popover-template-popup].popover.bottom-left>.arrow,
+		[uib-popover-template-popup].popover.bottom-right>.arrow,
+		[uib-popover-template-popup].popover.left-top>.arrow,
+		[uib-popover-template-popup].popover.left-bottom>.arrow,
+		[uib-popover-template-popup].popover.right-top>.arrow,
+		[uib-popover-template-popup].popover.right-bottom>.arrow {
+			top: auto;
+			bottom: auto;
+			left: auto;
+			right: auto;
+			margin: 0;
+		}
+
+		[uib-popover-popup].popover,
+		[uib-popover-html-popup].popover,
+		[uib-popover-template-popup].popover {
+			display: block !important;
+		}
+	</style>
+	<style type="text/css">
+		.uib-datepicker-popup.dropdown-menu {
+			display: block;
+			float: none;
+			margin: 0;
+		}
+
+		.uib-button-bar {
+			padding: 10px 9px 2px;
+		}
+	</style>
+	<style type="text/css">
+		.uib-position-measure {
+			display: block !important;
+			visibility: hidden !important;
+			position: absolute !important;
+			top: -9999px !important;
+			left: -9999px !important;
+		}
+
+		.uib-position-scrollbar-measure {
+			position: absolute !important;
+			top: -9999px !important;
+			width: 50px !important;
+			height: 50px !important;
+			overflow: scroll !important;
+		}
+
+		.uib-position-body-scrollbar-measure {
+			overflow: scroll !important;
+		}
+	</style>
+	<style type="text/css">
+		.uib-datepicker .uib-title {
+			width: 100%;
+		}
+
+		.uib-day button,
+		.uib-month button,
+		.uib-year button {
+			min-width: 100%;
+		}
+
+		.uib-left,
+		.uib-right {
+			width: 100%
+		}
+	</style>
+	<style type="text/css">
+		.ng-animate.item:not(.left):not(.right) {
+			-webkit-transition: 0s ease-in-out left;
+			transition: 0s ease-in-out left
+		}
+	</style>
+	<style type="text/css">
+		@charset "UTF-8";
+
+		[ng\:cloak],
+		[ng-cloak],
+		[data-ng-cloak],
+		[x-ng-cloak],
+		.ng-cloak,
+		.x-ng-cloak,
+		.ng-hide:not(.ng-hide-animate) {
+			display: none !important;
+		}
+
+		ng\:form {
+			display: block;
+		}
+
+		.ng-animate-shim {
+			visibility: hidden;
+		}
+
+		.ng-anchor {
+			position: absolute;
+		}
+	</style>
+
+	<title>Mr.Lancer personal cv/resume angular template by Phoenixcoded</title>
+	<!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="Phoenixcoded">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="http://html.phoenixcoded.net/resume-angular/mrlancer/assets/images/favicon.ico"
+		type="image/x-icon">
+	<link rel="icon" href="http://html.phoenixcoded.net/resume-angular/mrlancer/assets/images/favicon.ico"
+		type="image/x-icon">
+
+	<!-- Required Framework-->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+	<!-- Google font & font-awasome-->
+	<link rel="stylesheet" type="text/css"
+		href="assets/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Josefin+Sans:400,300,600,700"
+		rel="stylesheet" type="text/css">
+
+	<!-- Timeline css -->
+	<link rel="stylesheet" type="text/css"
+		href="assets/css/timeline.css">
+
+	<!-- Animate css -->
+	<link rel="stylesheet" type="text/css"
+		href="assets/css/animate.min.css">
+
+	<!--Angularjs animation-->
+	<link rel="stylesheet" type="text/css"
+		href="assets/css/animation.css">
+
+	<!-- Style css -->
+	<link rel="stylesheet" type="text/css"
+		href="assets/css/style.css">
+
+	<!-- Reset css -->
+	<link rel="stylesheet" type="text/css"
+		href="assets/css/reset.css">
+
+	<!-- Responsive css -->
+	<link rel="stylesheet" type="text/css"
+		href="assets/css/responsive.css">
+
+	<!--slick-carousel css-->
+	<link rel="stylesheet" type="text/css"
+		href="assets/css/slick-carousel/slick.css">
+	<link rel="stylesheet" type="text/css"
+		href="assets/css/slick-carousel/slick-theme.css">
+
+</head>
+
+<body data-ng-controller="ResumeController" class="ng-scope">
+	<div id="main_loader" style="display: none;">
+		<div id="loader">
+			<div></div>
+		</div>
+	</div>
+
+	<nav class="cd-side-navigation sidebar left" id="myDIV" data-banner="" style="left: -94px;">
+		<ul>
+			<li>
+				<a href="index.html" class="selected">
+					<span class="home_icon"></span>
+					<span>Inicio</span>
+				</a>
+			</li>
+			<li>
+				<a href="resume.html">
+					<span class="resume_icon"></span>
+					<span>Resumen</span>
+				</a>
+			</li>
+			<li>
+				<a href="http://html.phoenixcoded.net/resume-angular/mrlancer/portfolio.html">
+					<span class="portfolio_icon"></span>
+					<span>Portafolio</span>
+				</a>
+			</li>
+			<li>
+				<a href="http://html.phoenixcoded.net/resume-angular/mrlancer/blog.html">
+					<span class="blog_icon"></span>
+					<span>Blog</span>
+				</a>
+			</li>
+			<li>
+				<a href="http://html.phoenixcoded.net/resume-angular/mrlancer/contact.html">
+					<span class="cont_icon"></span>
+					<span>Contáctame</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="sidebar-btn toggle_icon_block" data-action="toggle" data-side="left" data-ng-click="ShowHide()">
+		<div class="toggle_icon">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+
+	<main class="cd-main">
+		<section class="cd-section resume visible">
+			<div class="container">
+				<div class="ptb-60">
+					<div class="row">
+						<div>
+							<div class="col-sm-12">
+								<h1 class="title">My <span class="bolder">Resume</span></h1>
+								<p class="mb40">
+									Assertively cultivate professional interfaces without synergistic etworks. Quickly
+									erage existing customized ideas through client-based eliverables. Compellingly
+									unleash fully tested outsourcing with prospective tunities. Uniquely maximize
+									client-centric tals rather than focused web-readiness. Intrinsicly monetize reliable
+									interfaces rather than multimedia based experiences. synergistic networks. Quickly
+									rather than multimedia based Collaboratively synergize economically sound process
+									improvements with functionalized e-commerce.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-offset-1 col-xs-12 col-sm-11" style="overflow: hidden">
+							<div class="mb40">
+								<h3>Professional Skill</h3>
+								<div class="row">
+									<div class="mb50">
+										<div class="col-sm-2">
+											<h4 class="mt0">Wordpress</h4>
+										</div>
+										<div class="col-sm-10 ">
+											<div>
+												<div class="progress ng-isolate-scope" data-uib-progressbar=""
+													data-value="75">
+													<div class="progress-bar animated slideInLeft"
+														ng-class="type &amp;&amp; &#39;progress-bar-&#39; + type"
+														role="progressbar" aria-valuenow="75" aria-valuemin="0"
+														aria-valuemax="100"
+														ng-style="{width: (percent &lt; 100 ? percent : 100) + &#39;%&#39;}"
+														aria-valuetext="75%" aria-labelledby="progressbar"
+														ng-transclude="" style="width: 75%;"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="mb50">
+										<div class="col-sm-2">
+											<h4 class="mt0">Designing</h4>
+										</div>
+										<div class="col-sm-10 ">
+											<div>
+												<div class="progress ng-isolate-scope" data-uib-progressbar=""
+													data-value="55">
+													<div class="progress-bar animated slideInLeft"
+														ng-class="type &amp;&amp; &#39;progress-bar-&#39; + type"
+														role="progressbar" aria-valuenow="55" aria-valuemin="0"
+														aria-valuemax="100"
+														ng-style="{width: (percent &lt; 100 ? percent : 100) + &#39;%&#39;}"
+														aria-valuetext="55%" aria-labelledby="progressbar"
+														ng-transclude="" style="width: 55%;"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="mb50">
+										<div class="col-sm-2">
+											<h4 class="mt0">Javascript</h4>
+										</div>
+										<div class="col-sm-10 ">
+											<div>
+												<div class="progress ng-isolate-scope" data-uib-progressbar=""
+													data-value="85">
+													<div class="progress-bar animated slideInLeft"
+														ng-class="type &amp;&amp; &#39;progress-bar-&#39; + type"
+														role="progressbar" aria-valuenow="85" aria-valuemin="0"
+														aria-valuemax="100"
+														ng-style="{width: (percent &lt; 100 ? percent : 100) + &#39;%&#39;}"
+														aria-valuetext="85%" aria-labelledby="progressbar"
+														ng-transclude="" style="width: 85%;"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="mb50">
+										<div class="col-sm-2">
+											<h4 class="mt0">Photoshop</h4>
+										</div>
+										<div class="col-sm-10 ">
+											<div>
+												<div class="progress ng-isolate-scope" data-uib-progressbar=""
+													data-value="45">
+													<div class="progress-bar animated slideInLeft"
+														ng-class="type &amp;&amp; &#39;progress-bar-&#39; + type"
+														role="progressbar" aria-valuenow="45" aria-valuemin="0"
+														aria-valuemax="100"
+														ng-style="{width: (percent &lt; 100 ? percent : 100) + &#39;%&#39;}"
+														aria-valuetext="45%" aria-labelledby="progressbar"
+														ng-transclude="" style="width: 45%;"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="mb50">
+										<div class="col-sm-2">
+											<h4 class="mt0">Creative</h4>
+										</div>
+										<div class="col-sm-10 ">
+											<div>
+												<div class="progress ng-isolate-scope" data-uib-progressbar=""
+													data-value="60">
+													<div class="progress-bar animated slideInLeft"
+														ng-class="type &amp;&amp; &#39;progress-bar-&#39; + type"
+														role="progressbar" aria-valuenow="60" aria-valuemin="0"
+														aria-valuemax="100"
+														ng-style="{width: (percent &lt; 100 ? percent : 100) + &#39;%&#39;}"
+														aria-valuetext="60%" aria-labelledby="progressbar"
+														ng-transclude="" style="width: 60%;"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="mb40 skills-tab">
+								<h3>Additional Skill</h3>
+								<div class="row text-center mb60">
+									<div class="col-sm-4 col-xs-12 mob_chart " style="height: 153.2px;">
+										<div class="Circle_progress ng-binding" data-ng-style="getStyle()"
+											style="top: 40%; bottom: auto; left: 50%; transform: translateY(-50%) translateX(-50%); font-weight: 400; font-size: 24px;">
+											68%</div>
+										<div class="round-progress-wrapper ng-isolate-scope" data-round-progress=""
+											data-max="max" data-current="current" data-color="#0487cc" data-radius="70"
+											data-bgcolor="#ffffff" data-semi="isSemi" data-stroke="3"
+											data-rounded="false" data-clockwise="true" data-responsive="false"
+											data-duration="1000" data-animation="easeInOutQuart"
+											data-animation-delay="0" data-on-render="showPreciseCurrent">
+											<svg class="round-progress" xmlns="http://www.w3.org/2000/svg"
+												role="progressbar" aria-valuemin="0">
+												<circle fill="none"></circle>
+												<path fill="none"></path>
+												<g ng-transclude="">
+
+												</g>
+											</svg>
+										</div>
+										<div class="text-center mob_counter">
+											<h5>Communication Skill</h5>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-12 mob_chart" style="height: 153.2px;">
+
+										<div class="Circle_progress ng-binding" data-ng-style="getStyle()"
+											style="top: 40%; bottom: auto; left: 50%; transform: translateY(-50%) translateX(-50%); font-weight: 400; font-size: 24px;">
+											90%</div>
+										<div class="round-progress-wrapper ng-isolate-scope" data-round-progress=""
+											data-max="max" data-current="current1" data-color="#0487cc" data-radius="70"
+											data-bgcolor="#ffffff" data-semi="isSemi" data-stroke="3"
+											data-rounded="false" data-clockwise="true" data-responsive="false"
+											data-duration="1000" data-animation="easeInOutQuart"
+											data-animation-delay="0" data-on-render="showPreciseCurrent1">
+											<svg class="round-progress" xmlns="http://www.w3.org/2000/svg"
+												role="progressbar" aria-valuemin="0">
+												<circle fill="none"></circle>
+												<path fill="none"></path>
+												<g ng-transclude="">
+
+												</g>
+											</svg>
+										</div>
+										<div class="text-center mob_counter">
+											<h5>English</h5>
+										</div>
+									</div>
+									<div class="col-sm-4 col-xs-12 mob_chart" style="height: 153.2px;">
+
+										<div class="Circle_progress ng-binding" data-ng-style="getStyle()"
+											style="top: 40%; bottom: auto; left: 50%; transform: translateY(-50%) translateX(-50%); font-weight: 400; font-size: 24px;">
+											83%</div>
+										<div class="round-progress-wrapper ng-isolate-scope" data-round-progress=""
+											data-max="max" data-current="current2" data-color="#0487cc" data-radius="70"
+											data-bgcolor="#ffffff" data-semi="isSemi" data-stroke="3"
+											data-rounded="false" data-clockwise="true" data-responsive="false"
+											data-duration="1000" data-animation="easeInOutQuart"
+											data-animation-delay="0" data-on-render="showPreciseCurrent2">
+											<svg class="round-progress" xmlns="http://www.w3.org/2000/svg"
+												role="progressbar" aria-valuemin="0">
+												<circle fill="none"></circle>
+												<path fill="none"></path>
+												<g ng-transclude="">
+
+												</g>
+											</svg>
+										</div>
+										<div class="text-center mob_counter">
+											<h5>Creative</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="mb40">
+								<h3>Experince</h3>
+								<div class="timeline timeline-left gray-blue">
+									<div class="timeline-block">
+										<i class="fa fa-suitcase"></i>
+										<div class="timeline-icon"></div>
+										<div class="timeline-content">
+											<h4>WEB AGENCY</h4>
+											<p>
+												Assertively cultivate professional interfaces without synergistic
+												etworks. Quickly erage existing customized ideas through client-based
+												eliverables. Compellingly unleash fully tested outsourcing with
+												prospective tunities. Uniquely maximize client-centric tals rather than
+												focused
+											</p>
+											<div class="timeline-date">2011-2012
+												<h4 class="system_font_color" title="Hello Developer">Web Developer</h4>
+											</div>
+										</div>
+									</div>
+									<div class="timeline-block">
+										<div class="timeline-icon"></div>
+										<div class="timeline-content">
+											<h4>GOOGLE INC</h4>
+											<p>
+												Assertively cultivate professional interfaces without synergistic
+												etworks. Quickly erage existing customized ideas through client-based
+												eliverables. Compellingly unleash fully tested outsourcing with
+												prospective tunities. Uniquely maximize client-centric tals rather than
+												focused
+											</p>
+											<div class="timeline-date">2013-2014
+												<h4 class="system_font_color" title="Hello Developer">Web Developer</h4>
+											</div>
+										</div>
+									</div>
+									<div class="timeline-block">
+										<div class="timeline-icon"></div>
+										<div class="timeline-content">
+											<h4>WEB AGENCY</h4>
+											<p>
+												Assertively cultivate professional interfaces without synergistic
+												etworks. Quickly erage existing customized ideas through client-based
+												eliverables. Compellingly unleash fully tested outsourcing with
+												prospective tunities. Uniquely maximize client-centric tals rather than
+												focused
+											</p>
+											<div class="timeline-date">2015-2016
+												<h4 class="system_font_color" title="Hello Developer">Web Developer</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+
+							</div>
+							<div class="mb40">
+								<h3>Education</h3>
+								<div class="timeline timeline-left gray-blue">
+									<div class="timeline-block">
+										<i class="fa fa-graduation-cap"></i>
+										<div class="timeline-icon"></div>
+										<div class="timeline-content">
+											<h4>WEB AGENCY</h4>
+											<p>
+												Assertively cultivate professional interfaces without synergistic
+												etworks. Quickly erage existing customized ideas through client-based
+												eliverables. Compellingly unleash fully tested outsourcing with
+												prospective tunities. Uniquely maximize client-centric tals rather than
+												focused
+											</p>
+											<div class="timeline-date">2011-2012
+												<h4 class="system_font_color">Web Developer</h4>
+											</div>
+										</div>
+									</div>
+									<div class="timeline-block">
+										<div class="timeline-icon"></div>
+										<div class="timeline-content">
+											<h4>GOOGLE INC</h4>
+											<p>
+												Assertively cultivate professional interfaces without synergistic
+												etworks. Quickly erage existing customized ideas through client-based
+												eliverables. Compellingly unleash fully tested outsourcing with
+												prospective tunities. Uniquely maximize client-centric tals rather than
+												focused
+											</p>
+											<div class="timeline-date">2013-2014
+												<h4 class="system_font_color">Web Developer</h4>
+											</div>
+										</div>
+									</div>
+									<div class="timeline-block">
+										<div class="timeline-icon"></div>
+										<div class="timeline-content">
+											<h4>WEB AGENCY</h4>
+											<p>
+												Assertively cultivate professional interfaces without synergistic
+												etworks. Quickly erage existing customized ideas through client-based
+												eliverables. Compellingly unleash fully tested outsourcing with
+												prospective tunities. Uniquely maximize client-centric tals rather than
+												focused
+											</p>
+											<div class="timeline-date">2015-2016
+												<h4 class="system_font_color">Web Developer</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="mb40">
+								<h3>My Best Quotes</h3>
+								<div data-slick=""
+									class="slider single-item ng-isolate-scope slick-initialized slick-slider slick-dotted"
+									data-slides-to-show="1" data-slides-to-scroll="1" data-autoplay="true"
+									data-draggable="true" data-fade="true" data-arrows="false" data-dots="true"
+									role="toolbar">
+									<div aria-live="polite" class="slick-list draggable">
+										<div class="slick-track" style="opacity: 1; width: 4172px;" role="listbox">
+											<div class="slick-slide" data-slick-index="0" aria-hidden="true"
+												style="width: 1043px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 300ms ease 0s;"
+												tabindex="-1" role="option" aria-describedby="slick-slide00">
+												<blockquote>
+													<p>" Sit ametctetur adipising elit, sed do eiusmod tempor incididint
+														ut labore magna aliuua. Ut enim ad minim veniam, quis nosturd
+														exercitation u, lamco laboris nisi ut aliquip "</p>
+												</blockquote>
+											</div>
+											<div class="slick-slide" data-slick-index="1" aria-hidden="true"
+												style="width: 1043px; position: relative; left: -1043px; top: 0px; z-index: 998; opacity: 0; transition: opacity 300ms ease 0s;"
+												tabindex="-1" role="option" aria-describedby="slick-slide01">
+												<blockquote>
+													<p>" Lorem Ipsum is simply dummy text of the printing and
+														typesetting industry. Lorem Ipsum has been the industry's
+														standard dummy text ever since the 1500s "</p>
+												</blockquote>
+											</div>
+											<div class="slick-slide slick-current slick-active" data-slick-index="2"
+												aria-hidden="false"
+												style="width: 1043px; position: relative; left: -2086px; top: 0px; z-index: 999; opacity: 1;"
+												tabindex="-1" role="option" aria-describedby="slick-slide02">
+												<blockquote>
+													<p>" It is a long established fact that a reader will be distracted
+														by the readable content of a page when looking at its layout "
+													</p>
+												</blockquote>
+											</div>
+											<div class="slick-slide" data-slick-index="3" aria-hidden="true"
+												style="width: 1043px; position: relative; left: -3129px; top: 0px; z-index: 998; opacity: 0; transition: opacity 300ms ease 0s;"
+												tabindex="-1" role="option" aria-describedby="slick-slide03">
+												<blockquote>
+													<p>" There are many variations of passages of Lorem Ipsum available,
+														but the majority have suffered alteration in some form, by
+														injected humour "</p>
+												</blockquote>
+											</div>
+										</div>
+									</div>
+
+
+
+									<ul class="slick-dots" style="display: block;" role="tablist">
+										<li class="" aria-hidden="true" role="presentation" aria-selected="true"
+											aria-controls="navigation00" id="slick-slide00"><button type="button"
+												data-role="none" role="button" tabindex="0">1</button></li>
+										<li aria-hidden="true" role="presentation" aria-selected="false"
+											aria-controls="navigation01" id="slick-slide01" class=""><button
+												type="button" data-role="none" role="button" tabindex="0">2</button>
+										</li>
+										<li aria-hidden="false" role="presentation" aria-selected="false"
+											aria-controls="navigation02" id="slick-slide02" class="slick-active"><button
+												type="button" data-role="none" role="button" tabindex="0">3</button>
+										</li>
+										<li aria-hidden="true" role="presentation" aria-selected="false"
+											aria-controls="navigation03" id="slick-slide03" class=""><button
+												type="button" data-role="none" role="button" tabindex="0">4</button>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<section class="testimonial_section mb40">
+				<div class="container text-center">
+					<!-- TESTIMONIAL CONTAINER  -->
+					<div data-slick="" id="testimonial-slider"
+						class="slider single-item ng-isolate-scope slick-initialized slick-slider"
+						data-slides-to-show="1" data-slides-to-scroll="1" data-arrows="false" data-autoplay="false"
+						draggable="true" data-adaptive-height="true" data-fade="true"
+						data-as-nav-for="#testimonial-carousel">
+
+						<div aria-live="polite" class="slick-list draggable" style="height: 68px;">
+							<div class="slick-track" style="opacity: 1; width: 9120px;" role="listbox">
+								<div class="slick-slide" data-slick-index="0" aria-hidden="true"
+									style="width: 1140px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 300ms ease 0s;"
+									tabindex="-1" role="option" aria-describedby="slick-slide10">
+									<p class="col-sm-10 col-sm-offset-1">"Holisticly empower leveraged ROI whereas
+										effective web-readiness. Completely enable emerging meta-services with
+										cross-platform web services "</p>
+
+								</div>
+								<div class="slick-slide" data-slick-index="1" aria-hidden="true"
+									style="width: 1140px; position: relative; left: -1140px; top: 0px; z-index: 998; opacity: 0; transition: opacity 300ms ease 0s;"
+									tabindex="-1" role="option" aria-describedby="slick-slide11">
+									<p class="col-sm-10 col-sm-offset-1">"Lorem Ipsum is simply dummy text of the
+										printing and typesetting industry. Lorem Ipsum has been the industry's standard
+										dummy text ever since the 1500s"</p>
+								</div>
+								<div class="slick-slide" data-slick-index="2" aria-hidden="true"
+									style="width: 1140px; position: relative; left: -2280px; top: 0px; z-index: 998; opacity: 0; transition: opacity 300ms ease 0s;"
+									tabindex="-1" role="option" aria-describedby="slick-slide12">
+									<p class="col-sm-10 col-sm-offset-1">" There are many variations of passages of
+										Lorem Ipsum available, but the majority have suffered alteration in some form,
+										by injected humour "</p>
+
+								</div>
+								<div class="slick-slide" data-slick-index="3" aria-hidden="true"
+									style="width: 1140px; position: relative; left: -3420px; top: 0px; z-index: 998; opacity: 0; transition: opacity 300ms ease 0s;"
+									tabindex="-1" role="option" aria-describedby="slick-slide13">
+									<p class="col-sm-10 col-sm-offset-1">" It is a long established fact that a reader
+										will be distracted by the readable content of a page when looking at its layout
+										"</p>
+
+
+								</div>
+								<div class="slick-slide" data-slick-index="4" aria-hidden="true"
+									style="width: 1140px; position: relative; left: -4560px; top: 0px; z-index: 998; opacity: 0; transition: opacity 300ms ease 0s;"
+									tabindex="-1" role="option" aria-describedby="slick-slide14">
+									<p class="col-sm-10 col-sm-offset-1">"Quickly initiate inexpensive total linkage
+										rather than extensible scenarios. Holisticly empower leveraged ROI whereas
+										effective web-readiness."</p>
+
+								</div>
+								<div class="slick-slide" data-slick-index="5" aria-hidden="true"
+									style="width: 1140px; position: relative; left: -5700px; top: 0px; z-index: 998; opacity: 0; transition: opacity 300ms ease 0s;"
+									tabindex="-1" role="option" aria-describedby="slick-slide15">
+									<p class="col-sm-10 col-sm-offset-1">"Holisticly empower leveraged ROI whereas
+										effective web-readiness. Completely enable emerging meta-services with
+										cross-platform web services "</p>
+
+								</div>
+								<div class="slick-slide slick-current slick-active" data-slick-index="6"
+									aria-hidden="false"
+									style="width: 1140px; position: relative; left: -6840px; top: 0px; z-index: 999; opacity: 1;"
+									tabindex="-1" role="option" aria-describedby="slick-slide16">
+									<p class="col-sm-10 col-sm-offset-1">"Lorem Ipsum is simply dummy text of the
+										printing and typesetting industry. Lorem Ipsum has been the industry's standard
+										dummy text ever since the 1500s"</p>
+
+								</div>
+								<div class="slick-slide" data-slick-index="7" aria-hidden="true"
+									style="width: 1140px; position: relative; left: -7980px; top: 0px; z-index: 998; opacity: 0;"
+									tabindex="-1" role="option" aria-describedby="slick-slide17">
+									<p class="col-sm-10 col-sm-offset-1">" It is a long established fact that a reader
+										will be distracted by the readable content of a page when looking at its layout
+										"</p>
+
+								</div>
+							</div>
+						</div>
+
+
+
+
+
+
+
+
+
+
+
+					</div>
+
+					<span class="testimonial-divider testimonial-divider-color"></span>
+
+					<!-- TESTIMONIALS THUMB CONTAINER  -->
+					<div data-slick="" id="testimonial-carousel"
+						class="testimonial-thumbs slider single-item ng-isolate-scope slick-initialized slick-slider"
+						data-slides-to-show="5" data-slides-to-scroll="1" data-arrows="false"
+						data-as-nav-for="#testimonial-slider" data-dots="false" data-center-mode="true"
+						data-autoplay="true" data-focus-on-select="true" data-responsive="breakpoints">
+						<div aria-live="polite" class="slick-list draggable" style="padding: 0px 50px;">
+							<div class="slick-track"
+								style="opacity: 1; width: 4160px; transform: translate3d(-2080px, 0px, 0px);"
+								role="listbox">
+								<div class="slick-slide slick-cloned" data-slick-index="-6" aria-hidden="true"
+									style="width: 208px;" tabindex="-1">
+									<img src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/resume_slider3.png"
+										alt="">
+									<div class="testimonial_user">
+										<h4>John Doe</h4>
+										<h5>CEO, Envato</h5>
+									</div>
+								</div>
+								<div class="slick-slide slick-cloned" data-slick-index="-5" aria-hidden="true"
+									style="width: 208px;" tabindex="-1">
+									<img src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/resume_slider4.png"
+										alt="">
+									<div class="testimonial_user">
+										<h4>Hannah Brown</h4>
+										<h5>Founder, Tuts+</h5>
+									</div>
+								</div>
+								<div class="slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true"
+									style="width: 208px;" tabindex="-1">
+									<img src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/resume_slider5.png"
+										alt="">
+									<div class="testimonial_user">
+										<h4>Hannah Brown</h4>
+										<h5>Founder, Tuts+</h5>
+									</div>
+								</div>
+								<div class="slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true"
+									style="width: 208px;" tabindex="-1">
+									<img src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/resume_slider2.png"
+										alt="">
+									<div class="testimonial_user">
+										<h4>John Doe</h4>
+										<h5>CEO, Envato</h5>
+									</div>
+								</div>
+								<div class="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true"
+									style="width: 208px;" tabindex="-1">
+									<img src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/resume_slider3.png"
+										alt="">
+									<div class="testimonial_user">
+										<h4>Hannah Brown</h4>
+										<h5>Founder, Tuts+</h5>
+									</div>
+								</div>
+								<div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true"
+									style="width: 208px;" tabindex="-1">
+									<img src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/resume_slider4.png"
+										alt="">
+									<div class="testimonial_user">
+										<h4>John Doe</h4>
+										<h5>CEO, Envato</h5>
+									</div>
+								</div>
+								<div class="slick-slide" data-slick-index="0" aria-hidden="true" style="width: 208px;"
+									tabindex="-1" role="option" aria-describedby="slick-slide20">
+									<img src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/resume_slider1.png"
+										alt="">
+									<div class="testimonial_user">
+										<h4>John Doe</h4>
+										<h5>CEO, Envato</h5>
+									</div>
+								</div>
+								<div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 208px;"
+									tabindex="-1" role="option" aria-describedby="slick-slide21">
+									<img src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/resume_slider2.png"
+										alt="">
+									<div class="testimonial_user">
+										<h4>Alan Sharp</h4>
+										<h5>CEO, Themeforest</h5>
+									</div>
+								</div>
+								<div class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 208px;"
+									tabindex="-1" role="option" aria-describedby="slick-slide22">
+									<img src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/resume_slider3.png"
+										alt="">
+									<div class="testimonial_user">
+										<h4>John Doe</h4>
+										<h5>CEO, Envato</h5>
+									</div>
+								</div>
+								<div class="slick-slide" data-slick-index="3" aria-hidden="true" style="width: 208px;"
+									tabindex="-1" role="option" aria-describedby="slick-slide23">
+									<img src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/resume_slider4.png"
+										alt="">
+									<div class="testimonial_user">
+										<h4>Hannah Brown</h4>
+										<h5>Founder, Tuts+</h5>
+									</div>
+								</div>
+								<div class="slick-slide slick-active" data-slick-index="4" aria-hidden="false"
+									style="width: 208px;" tabindex="-1" role="option" aria-describedby="slick-slide24">
+									<img src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/resume_slider5.png"
+										alt="">
+									<div class="testimonial_user">
+										<h4>Hannah Brown</h4>
+										<h5>Founder, Tuts+</h5>
+									</div>
+								</div>
+								<div class="slick-slide slick-active" data-slick-index="5" aria-hidden="false"
+									style="width: 208px;" tabindex="-1" role="option" aria-describedby="slick-slide25">
+									<img src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/resume_slider2.png"
+										alt="">
+									<div class="testimonial_user">
+										<h4>John Doe</h4>
+										<h5>CEO, Envato</h5>
+									</div>
+								</div>
+								<div class="slick-slide slick-current slick-active slick-center" data-slick-index="6"
+									aria-hidden="false" style="width: 208px;" tabindex="-1" role="option"
+									aria-describedby="slick-slide26">
+									<img src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/resume_slider3.png"
+										alt="">
+									<div class="testimonial_user">
+										<h4>Hannah Brown</h4>
+										<h5>Founder, Tuts+</h5>
+									</div>
+								</div>
+								<div class="slick-slide slick-active" data-slick-index="7" aria-hidden="false"
+									style="width: 208px;" tabindex="-1" role="option" aria-describedby="slick-slide27">
+									<img src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/resume_slider4.png"
+										alt="">
+									<div class="testimonial_user">
+										<h4>John Doe</h4>
+										<h5>CEO, Envato</h5>
+									</div>
+								</div>
+								<div class="slick-slide slick-cloned slick-active" data-slick-index="8"
+									aria-hidden="false" style="width: 208px;" tabindex="-1">
+									<img src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/resume_slider1.png"
+										alt="">
+									<div class="testimonial_user">
+										<h4>John Doe</h4>
+										<h5>CEO, Envato</h5>
+									</div>
+								</div>
+								<div class="slick-slide slick-cloned" data-slick-index="9" aria-hidden="true"
+									style="width: 208px;" tabindex="-1">
+									<img src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/resume_slider2.png"
+										alt="">
+									<div class="testimonial_user">
+										<h4>Alan Sharp</h4>
+										<h5>CEO, Themeforest</h5>
+									</div>
+								</div>
+								<div class="slick-slide slick-cloned" data-slick-index="10" aria-hidden="true"
+									style="width: 208px;" tabindex="-1">
+									<img src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/resume_slider3.png"
+										alt="">
+									<div class="testimonial_user">
+										<h4>John Doe</h4>
+										<h5>CEO, Envato</h5>
+									</div>
+								</div>
+								<div class="slick-slide slick-cloned" data-slick-index="11" aria-hidden="true"
+									style="width: 208px;" tabindex="-1">
+									<img src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/resume_slider4.png"
+										alt="">
+									<div class="testimonial_user">
+										<h4>Hannah Brown</h4>
+										<h5>Founder, Tuts+</h5>
+									</div>
+								</div>
+								<div class="slick-slide slick-cloned" data-slick-index="12" aria-hidden="true"
+									style="width: 208px;" tabindex="-1">
+									<img src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/resume_slider5.png"
+										alt="">
+									<div class="testimonial_user">
+										<h4>Hannah Brown</h4>
+										<h5>Founder, Tuts+</h5>
+									</div>
+								</div>
+								<div class="slick-slide slick-cloned" data-slick-index="13" aria-hidden="true"
+									style="width: 208px;" tabindex="-1">
+									<img src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/resume_slider2.png"
+										alt="">
+									<div class="testimonial_user">
+										<h4>John Doe</h4>
+										<h5>CEO, Envato</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+
+
+
+
+					</div>
+
+				</div>
+
+
+			</section>
+			<div class="text-center mb40">
+				<button class="btn system_btn download_icon
+					">
+					<span></span>
+					Download CV
+				</button>
+				<button class="btn system_btn ml20 print_icon">
+					<span></span>
+					Print CV
+				</button>
+			</div>
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 text-left">
+							<h6> Design by <a href="http://phoenixcoded.com/" target="_blank">Phoenixcoded</a> </h6>
+						</div>
+						<div class="col-sm-6 text-right">
+							<h6> Copyright © <span id="copyright-year">2016</span>. All rights reserved </h6>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</section>
+	</main>
+	<!-- Warning Section Starts -->
+	<!-- Older IE warning message -->
+	<!--[if lt IE 9]>
+    <div class="ie-warning">
+        <h1>Warning!!</h1>
+        <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+        <div class="iew-container">
+            <ul class="iew-download">
+                <li>
+                    <a href="http://www.google.com/chrome/">
+                        <img src="assets/images/browser/chrome.png" alt="">
+                        <div>Chrome</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.mozilla.org/en-US/firefox/new/">
+                        <img src="assets/images/browser/firefox.png" alt="">
+                        <div>Firefox</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.opera.com">
+                        <img src="assets/images/browser/opera.png" alt="">
+                        <div>Opera</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.apple.com/safari/">
+                        <img src="assets/images/browser/safari.png" alt="">
+                        <div>Safari</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                        <img src="assets/images/browser/ie.png" alt="">
+                        <div>IE (9 & above)</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p>Sorry for the inconvenience!</p>
+    </div>  -->
+	<!--[endif]-->
+	<!-- Warning Section Ends -->
+
+	<!-- Required js -->
+	<script
+		src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/jquery.2.2.3.min.js.descarga"></script>
+	<script
+		src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/jquery.easing.min.js.descarga"></script>
+	<script
+		src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/bootstrap.min.js.descarga"></script>
+
+	<!-- Mobile Sidebar menu js  -->
+	<script src="assets/js/jquery.sidebar.min.js"></script>
+
+	<!--AngularJs script start-->
+
+	<script
+		src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/angular.min.js.descarga"></script>
+
+	<!--Module script-->
+	<script
+		src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/ResumeModule.js.descarga"></script>
+
+	<!--controller script-->
+	<script
+		src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/ResumeController.js.descarga"></script>
+
+	<!-- ui-bootstrap-tpls-2.0.2.js -->
+	<script type="text/javascript"
+		src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/ui-bootstrap-tpls-2.0.2.js.descarga"></script>
+
+	<!--roundProgress script-->
+	<script
+		src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/roundProgressScroll.js.descarga"></script>
+	<!--Slick js-->
+	<script src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/slick.js.descarga"></script>
+	<script src="./Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/slick.js(1).descarga"></script>
+
+	<!--AngularJs script end-->
+
+
+
+</body>
+
+</html>

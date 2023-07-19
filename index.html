@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="MainResume" class="ng-scope">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+	
+	<title>bootstrap CV</title>
+	<!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="Phoenixcoded">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="assets/images/favicon.jpg" type="image/x-icon">
+	<link rel="icon" href="assets/images/favicon.jpg" type="image/x-icon">
+
+	<!-- Required Framework-->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+	<!-- Google font & font-awasome-->
+	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+	<link href="Mr.Lancer personal cv_resume angular template by Phoenixcoded_files/css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+	<!--Video pop-up css-->
+	<link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
+
+	<!-- Style css-->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Reset css-->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<!-- Responsive css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/resonsive.css">
+</head>
+<body data-ng-controller="MainController" class="ng-scope" style="">
+	<div id="main_loader">
+	<div id="loader">
+		<div></div>
+		<div></div>
+	</div>
+</div>
+<nav class="cd-side-navigation sidebar left" id="myDIV" data-banner="" style="left: -94px;">
+	<ul>
+		<li>
+			<a href="index.html" class="selected">
+				<span class="home_icon"></span>
+				<span>Inicio</span>
+			</a>
+		</li>
+		<li>
+			<a href="http://html.phoenixcoded.net/resume-angular/mrlancer/resume.html">
+				<span class="resume_icon"></span>
+				<span>Resumen</span>
+			</a>
+		</li>
+		<li>
+			<a href="http://html.phoenixcoded.net/resume-angular/mrlancer/portfolio.html">
+				<span class="portfolio_icon"></span>
+				<span>Portafolio</span>
+			</a>
+		</li>
+		<li>
+			<a href="http://html.phoenixcoded.net/resume-angular/mrlancer/blog.html">
+				<span class="blog_icon"></span>
+				<span>Blog</span>
+			</a>
+		</li>
+		<li>
+			<a href="http://html.phoenixcoded.net/resume-angular/mrlancer/contact.html">
+				<span class="cont_icon"></span>
+				<span>Contáctame</span>
+			</a>
+		</li>
+	</ul>
+</nav>
+
+<div class="sidebar-btn toggle_icon_block" data-action="toggle" data-side="left" data-ng-click="ShowHide()">
+	<div class="toggle_icon ">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</div>
+
+<main class="cd-main">
+	<section class="cd-section index visible">
+		<div class="container home_container">
+			<div class="ptb-60">
+				<div class="row valign-wrapper mb40">
+					<div class="col-sm-6">
+						<div class="home_icon_block">
+							<img class="img img-responsive" src="assets/images/home_author.jpg" alt="Web Devloper">
+							<div class="home_social_icon">
+								<a href="http://html.phoenixcoded.net/resume-angular/mrlancer/index.html#">
+									<span class="facebook_icon" data-ng-mouseenter="showFb()" data-ng-mouseleave="hideFb()"></span>
+								</a>
+								<a href="http://html.phoenixcoded.net/resume-angular/mrlancer/index.html#">
+									<span class="twitter_icon" data-ng-mouseenter="showTweeter()" data-ng-mouseleave="hideTweeter()"></span>
+								</a>
+								<a href="http://html.phoenixcoded.net/resume-angular/mrlancer/index.html#">
+									<span class="pin_icon" data-ng-mouseenter="showPin()" data-ng-mouseleave="hidePin()"></span>
+								</a>
+								<a href="http://html.phoenixcoded.net/resume-angular/mrlancer/index.html#">
+									<span class="linkedin_icon" data-ng-mouseenter="showLinkedin()" data-ng-mouseleave="hideLinkedin()"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 home_author_name">
+						<div class="home_author_details">
+							<h1>Ing.<span class="bolder">Carlos Rodríguez.</span></h1>
+							<h3>Ingeniero de Software - Desarrollo Web, Móvil y Mtto. de Equipo Informático.</h3>
+							<h4>
+								<span class="available_icon"></span>
+								Disponible como independiente / Home Office / Presencial.
+							</h4>
+						</div>
+
+						<p class="home_para_hide">
+							Escribo con entusiasmo código limpio y eficiente para crear soluciones de software innovadoras. Colaboro apasionadamente con los equipos para optimizar y mejorar los resultados del proyecto. Aprendo y adopto continuamente nuevas tecnologías para mantenerme a la vanguardia en el panorama de la programación en constante evolución.
+</p>
+<p>
+	Aprovecho los recursos para crear aplicaciones robustas y escalables. Adopto estrategias de bajo riesgo y alto rendimiento para maximizar la eficiencia del proyecto. Implemento experiencias de usuario interactivas y cadenas de suministro fluidas para ofrecer productos de software excepcionales.
+</p>
+						<div class="row valign-wrapper">
+							<div class="col-sm-6 mob_center">
+								<a class="btn btn-primary system_btn quick_btn" data-toggle="modal" data-target="#more_details">Vista Rápida del Perfil</a>
+							</div>
+							<div class="col-sm-6">
+								<div class="pull-right sign_img">
+									<img class="img img-responsive" src="assets/images/signature.png" alt="Signature">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 mb40">
+						<div>
+							<h2>Hobbies <span class="bolder">Favoritos</span></h2>
+							<div class="col-sm-2 col-xs-6 text-center home_facts">
+
+								<span class=""><i class="fa-solid fa-book fa-2xl" style="color: #1c92d1;"></i></span>
+								<h5>Leer</h5>
+
+							</div>
+							<div class="col-sm-2 col-xs-6 text-center home_facts">
+								<span class=""><i class="fa-solid fa-gamepad fa-2xl" style="color: #1c92d1;"></i></span>
+								<h5>Videojuegos</h5>
+							</div>
+							<div class="col-sm-2 col-xs-6 text-center home_facts">
+								<span class=""><i class="fa-solid fa-headphones fa-2xl" style="color: #1c92d1;"></i></span>
+								<h5>Música</h5>
+							</div>
+							<div class="col-sm-2 col-xs-6 text-center home_facts">
+								<span class=""><i class="fa-solid fa-camera fa-2xl" style="color: #1c92d1;"></i></span>
+								<h5>Fotografía</h5>
+							</div>
+							<div class="col-sm-2 col-xs-6 text-center home_facts">
+								<span class=""><i class="fa-solid fa-plane fa-2xl" style="color: #1c92d1;"></i></span>
+								<h5>Viajar</h5>
+							</div>
+							<div class="col-sm-2 col-xs-6 text-center home_facts">
+								<span class=""><i class="fa-solid fa-person-biking fa-2xl" style="color: #1c92d1;"></i></span>
+								<h5>Ciclismo</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<h2>información <span class="bolder">biográfica</span></h2>
+				<p class="mb40">
+					Soy ingeniero en Desarrollo y Gestión de Software Multiplataforma en 
+					busca de compartir mis habilidades, aportando nuevas ideas adquiridas en beneficio 
+					a la comunidad, haciendo uo de las tecnologías y colaborar con quien tenga una meta en común.
+					</p>
+
+				<div class="row valign-wrapper mb40">
+					<div class="col-sm-5 author_bio_img">
+						<img class="img img-responsive" src="assets/images/home_author_bio.jpg" alt="Web Devloper">
+					</div>
+					<div class="col-sm-7">
+						<div class="scroll_page_table">
+							<table class="table table- mb40">
+								<tbody>
+								<tr>
+									<th class="pb40">Nombre</th>
+									<th class="pb40">:</th>
+									<td class="pb40">Carlos Rodríguez</td>
+								</tr>
+								<tr>
+									<th class="pb40">Fecha de Nacimiento</th>
+									<th class="pb40">:</th>
+									<td class="pb40">26/04/1995</td>
+								</tr>
+								<tr>
+									<th class="pb40">Correo</th>
+									<th class="pb40">:</th>
+									<td class="pb40"><a href="mailto:crodriguez@epochteca.com" target="_top">crodriguez@epochteca.com</a></td>
+								</tr>
+								<tr>
+									<th class="pb40">Dirección</th>
+									<th class="pb40">:</th>
+									<td class="pb40">Morelia</td>
+								</tr>
+								<tr>
+									<th class="pb40">Telefono</th>
+									<th class="pb40">:</th>
+									<td class="pb40">4461025967</td>
+								</tr>
+								<tr>
+									<th>Sitio Web</th>
+									<th>:</th>
+									<td><a href="https://carlos-portafolio-web.vercel.app/" target="_blank">https://carlos-portafolio-web.vercel.app/</a></td>
+								</tr>
+								<tr>
+									<th>Linkedin</th>
+									<th>:</th>
+									<td><a href="https://themeforest.net/user/phoenixcoded" target="_blank">https://themeforest.net/user/phoenixcoded</a></td>
+								</tr>
+								<tr>
+									<th>Facebook</th>
+									<th>:</th>
+									<td>Phoenixcoded</td>
+								</tr>
+								<tr>
+									<th>Twitter</th>
+									<th>:</th>
+									<td><a href="https://twitter.com/phoenixcoded" target="_blank">@Phoenixcoded</a></td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+
+					</div>
+				</div>
+
+
+				<h2>Servicios <span class="bolder">Ofrecidos</span></h2>
+
+				<div class="row mb40">
+					<div class="offered_services">
+						<div class="col-md-4 text-center services_responsive">
+							<div class="offered_services_icon">
+								<span class=""> <i class="fa-solid fa-laptop-code fa-2xl"></i> </i> </span>
+							</div>
+							<h3 class="mtb20 system_font_color">Desarrollo de Software</h3>
+							<p>
+								A few months ago, we found ridiculously cheap pl ane tickets  was our first visit to the city and, believe it or not, Stockholm in February was more pleasant than Boston in March.
+							</p>
+						</div>
+						<div class="col-md-4 text-center services_responsive">
+							<div class="offered_services_icon">
+								<span class="management_icon"></span>
+							</div>
+							<h3 class="mtb20 system_font_color">Management</h3>
+							<p>
+								A few months ago, we found ridiculously cheap pl ane tickets  was our first visit to the city and, believe it or not, Stockholm in February was more pleasant than Boston in March.
+							</p>
+						</div>
+						<div class="col-md-4 text-center services_responsive">
+							<div class="offered_services_icon">
+								<span class=""><i class="fa-solid fa-palette fa-2xl"></i></span>
+							</div>
+							<h3 class="mtb20 system_font_color">Diseño Gráfico</h3>
+							<p>
+								A few months ago, we found ridiculously cheap pl ane tickets  was our first visit to the city and, believe it or not, Stockholm in February was more pleasant than Boston in March.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<h2>¿Quién <span class="bolder">soy yo ?</span></h2>
+
+				<div class="row">
+					<p class="mb40 col-md-10 col-md-offset-1 text-center">Un apasionado amante de la tecnología que en sus ratos libres le gusta subir videos y/o jugar videojuegos con amigos.</p>
+					
+					<center>
+    <div class="col-xl-12 video-img-block mb20">
+        <div class="video-play-icon">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xJYsZdeamyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+</center>
+
+				</div>
+				<div class="text-center">
+					<button type="button" class="btn system_btn mr25">Hire Me Now</button>
+					<button type="button" class="btn system_btn">Download CV</button>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 text-left">
+						<h6> Diseñado por<a href="" target="_blank"> Carlos Rodríguez</a> </h6>
+					</div>
+					<div class="col-sm-6 text-right">
+						<h6> Copyright © <span id="copyright-year">2023 </span> Derechos reservados.</h6>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+</main>
+
+<!-- Warning Section Starts -->
+<!-- Older IE warning message -->
+<!--[if lt IE 9]>
+<div class="ie-warning">
+	<h1>Warning!!</h1>
+	<p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+	<div class="iew-container">
+		<ul class="iew-download">
+			<li>
+				<a href="http://www.google.com/chrome/">
+					<img src="assets/images/browser/chrome.png" alt="">
+					<div>Chrome</div>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.mozilla.org/en-US/firefox/new/">
+					<img src="assets/images/browser/firefox.png" alt="">
+					<div>Firefox</div>
+				</a>
+			</li>
+			<li>
+				<a href="http://www.opera.com">
+					<img src="assets/images/browser/opera.png" alt="">
+					<div>Opera</div>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.apple.com/safari/">
+					<img src="assets/images/browser/safari.png" alt="">
+					<div>Safari</div>
+				</a>
+			</li>
+			<li>
+				<a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+					<img src="assets/images/browser/ie.png" alt="">
+					<div>IE (9 & above)</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<p>Sorry for the inconvenience!</p>
+</div>
+<![endif]-->
+<!-- Warning Section Ends -->
+
+<!-- Modal starts -->
+<div class="modal fade" id="more_details" style="display: none;">
+	<div class="modal-dialog modal-lg">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h3 class="modal-title">Quick profile view</h3>
+			</div>
+			<div class="modal-body profile_modal_body">
+				<div class="row">
+					<div class="modal_details">
+						<ul class="modal_profile mb40">
+							<li>
+								<img class="profile_pic img img-responsive" src="assets/images/modal_profile.png" alt="model profile">
+								<div>
+									<h3>Mr.lancer</h3>
+									<h4>
+										<span class="available_icon"></span>
+										Available On Freelancer
+									</h4>
+									<h4 class="working_hour"><span class="bolder">$8.00</span> /hr</h4>
+									<p>Expert project manager with php, codeigniter, PSD-to-html, Grouping</p>
+									<p class="modal_location mb20"><img class="img img-responsive" src="assets/images/location.png" alt="location">California,U.S.</p>
+									<div class="modal_profile_tag">
+										<span>PHP</span>
+										<span>Codeigniter</span>
+										<span>psd to html</span>
+										<span>AJAX</span>
+										<span>Jquery</span>
+									</div>
+								</div>
+
+							</li>
+						</ul>
+						<hr>
+					</div>
+				</div>
+				<div class="row">
+					<div class="modal_profile_bottom">
+						<div class="col-sm-6">
+							<div class="mb40">
+								<h6 class="system_font_color">Work History</h6>
+								<h5>100 Jobs, 2000 Hours of Coding </h5>
+							</div>
+							<div class="mb40">
+								<h6 class="system_font_color">Availability</h6>
+								<h5>30 hours/week full time</h5>
+							</div>
+
+							<div class="mb40">
+								<h6 class="system_font_color">Week Availability</h6>
+								<div class="availability_tags">
+									<span title="Sunday">S</span>
+									<span title="Monday">M</span>
+									<span title="Tuesday">T</span>
+									<span title="Wednesday">W</span>
+									<span title="Thursday">T</span>
+									<span title="Friday">F</span>
+									<span title="Saturday">S</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="mb40">
+								<h6 class="system_font_color">Language</h6>
+								<h5>English, Gujarati, Hindi</h5>
+							</div>
+							<div class="mb30">
+								<h6 class="system_font_color">Check out my freelancing profiles</h6>
+								<div class="freelance_acc_img">
+									<img class="img img-responsive" src="assets/images/freenlance_profile1.png" alt="freelance">
+									<img class="img img-responsive" src="assets/images/freenlance_profile2.png" alt="freelance">
+									<img class="img img-responsive" src="assets/images/freenlance_profile3.png" alt="freelance">
+								</div>
+							</div>
+							<div class="mb40">
+								<h6 class="system_font_color">Join us on</h6>
+								<div class="home_social_icons">
+									<a href="http://html.phoenixcoded.net/resume-angular/mrlancer/index.html#" class="mr5">
+										<span class="g-plus"></span>
+									</a>
+									<a href="http://html.phoenixcoded.net/resume-angular/mrlancer/index.html#" class="mr5">
+										<span class="fb"></span>
+									</a>
+									<a href="http://html.phoenixcoded.net/resume-angular/mrlancer/index.html#" class="mr5">
+										<span class="twt"></span>
+									</a>
+									<a href="http://html.phoenixcoded.net/resume-angular/mrlancer/index.html#" class="mr5">
+										<span class="pinit"></span>
+									</a>
+									<a href="http://html.phoenixcoded.net/resume-angular/mrlancer/index.html#">
+										<span class="lin"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Modal ends -->
+
+<!-- Required js -->
+<script src="assets/js/jquery.2.2.3.min.js"></script>
+<script src="assets/js/jquery.easing.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+<!-- Mobile Sidebar menu js  -->
+<script src="assets/js/jquery.sidebar.min.js"></script>
+
+<!--AngularJs script start-->
+
+<script src="assets/angularJS/angular.min.js"></script>
+
+<!--Module script-->
+<script src="assets/modules/module.js"></script>
+
+<!--controller script-->
+<script src="assets/controllers/controller.js"></script>
+
+<!-- angular animation -->
+<script src="assets/angularJS/angular-animate.js"></script>
+
+<!--AngularJs script end-->
+
+<!-- Video pop-up js -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+
+</body></html>
