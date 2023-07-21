@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+
+<html lang="en" data-ng-app="portfolio" class="csstransforms csstransforms3d csstransitions ng-scope">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@charset "UyTF-8";
+
+		[ng\:cloak],
+		[ng-cloak],
+		[data-ng-cloak],
+		[x-ng-cloak],
+		.ng-cloak,
+		.x-ng-cloak,
+		.ng-hide:not(.ng-hide-animate) {
+			display: none !important;
+		}
+
+		ng\:form {
+			display: block;
+		}
+
+		.ng-animate-shim {
+			visibility: hidden;
+		}
+
+		.ng-anchor {
+			position: absolute;
+		}
+	</style>
+
+	<title>Bootstrap CV-Hobbies</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="Phoenixcoded">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="assets/images/favicon.jpg"
+		type="image/x-icon">
+	<link rel="icon" href="assets/images/favicon.jpg"
+		type="image/x-icon">
+
+	<!-- Required Framework-->
+	<link rel="stylesheet" type="text/css"
+		href="assets/css/bootstrap.min.css">
+
+	<!-- Google font & font-awasome-->
+	<link rel="stylesheet" type="text/css"
+		href="assets/css/font-awesome.min.css">
+	
+
+	<!-- Style css -->
+	<link rel="stylesheet" type="text/css"
+		href="assets/css/style.css">
+
+	<!-- Reset css -->
+	<link rel="stylesheet" type="text/css"
+		href="assets/css/reset.css">
+
+	<!-- Responsive css -->
+	<link rel="stylesheet" type="text/css"
+		href="assets/css/responsive.css">
+
+
+</head>
+
+<body data-ng-controller="PortfolioController" class="ng-scope">
+	<div id="main_loader" style="display: none;">
+		<div id="loader">
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+	<nav class="cd-side-navigation sidebar left" id="myDIV" data-banner="" style="left: -94px;">
+		<ul>
+			<li>
+				<a href="http://html.phoenixcoded.net/resume-angular/mrlancer/index.html">
+					<span class="home_icon"></span>
+					<span>Home</span>
+				</a>
+			</li>
+			<li>
+				<a href="http://html.phoenixcoded.net/resume-angular/mrlancer/resume.html">
+					<span class="resume_icon"></span>
+					<span>Resume</span>
+				</a>
+			</li>
+			<li>
+				<a href="http://html.phoenixcoded.net/resume-angular/mrlancer/portfolio.html" class="selected">
+					<span class="portfolio_icon"></span>
+					<span>Portfolio</span>
+				</a>
+			</li>
+			<li>
+				<a href="http://html.phoenixcoded.net/resume-angular/mrlancer/blog.html">
+					<span class="blog_icon"></span>
+					<span>Blog</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="http://html.phoenixcoded.net/resume-angular/mrlancer/contact.html">
+					<span class="cont_icon"></span>
+					<span>Contact us</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="sidebar-btn toggle_icon_block" data-action="toggle" data-side="left" data-ng-click="ShowHide()">
+		<div class="toggle_icon ">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+
+	<main class="cd-main">
+		<section class="cd-section portfolio2 visible">
+			<div class="container">
+				<div class="ptb-60">
+					<div class="row">
+						<div class="portfolio_title">
+							<div class="col-sm-12">
+								<h1 class="title">Mis <span class="bolder">Pasatiempos</span></h1>
+								<p class="mb40" style="text-align: justify;">
+									Además de ser un profesionista, así como cualquier persona me gusta realizar
+									atividades en mi tiempo libre.
+									<br>que va desde cosas relacionadas con mi profesión hasta jugar videojuegos, leer,
+									salir de paseo, escuchar música y leer.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="port-tab">
+
+						<div class="portfolio_filters_group text-center" data-opt-kind="" ok-key="filter">
+							<div class="portfolio_btn">
+								<button type="button" class="btn system_btn mobile_tabs active"
+									ok-sel="*">Todos</button>
+								<button type="button" class="btn system_btn mobile_tabs"
+									ok-sel=".web">Programación</button>
+								<button type="button" class="btn system_btn mobile_tabs" ok-sel=".app">Música</button>
+								<button type="button" class="btn system_btn mobile_tabs"
+									ok-sel=".photo">Videojuegos</button>
+								<button type="button" class="btn system_btn mobile_tabs" ok-sel=".ill">Leer</button>
+							</div>
+						</div>
+					</div>
+					
+					<div class="container">
+					<div class="row" style="margin-left: 100px;">
+
+						<div id="isotopeContainer" data-isotope-container="" class="isotope"
+							style="position: relative; height: 1907.59px;">
+							<div data-isotope-item="" class="col-sm-4 col-md-3 kindling photo  mb25"
+								style="position: absolute; left: 0px; top: 0px;">
+								<div class="port_img port_detail_img">
+									<img class="img img-responsive" src="assets/images/portfolio_layout1.jpg"
+										alt="Portfolio-1">
+									<div class="text-left port_detail_content">
+										<h5><strong><a href="">Juegos en línea</a></strong></h5>
+										<span>Videojuegos</span>
+										<p class="mt5">
+											Jugar videojuegos con mis amigos
+										</p>
+
+									</div>
+								</div>
+							</div>
+							<div data-isotope-item="" class="col-sm-4 col-md-3 kindling app  mb25"
+								style="position: absolute; left: 292px; top: 0px;">
+								<div class="port_img port_detail_img">
+									<img class="img img-responsive" src="assets/images/portfolio_layout2.jpg"
+										alt="Portfolio-2">
+									<div class="text-left port_detail_content">
+										<h5><strong><a href="">canciones</a></strong></h5>
+										<span>Música</span>
+										<p class="mt5">
+											Escuchar música de diferentes géneros
+										</p>
+
+									</div>
+
+								</div>
+							</div>
+							<div data-isotope-item="" class="col-sm-4 col-md-3 kindling ill  mb25"
+								style="position: absolute; left: 585px; top: 0px;">
+								<div class="port_img port_detail_img">
+									<img class="img img-responsive" src="assets/images/portfolio_layout3.jpg"
+										alt="Portfolio-3">
+									<div class="text-left port_detail_content">
+										<h5><strong><a href="">Lectura</a></strong></h5>
+										<span>Leer</span>
+										<p class="mt5">
+											Vivir aventuras e historias en literatura
+										</p>
+
+									</div>
+
+								</div>
+							</div>
+							<div data-isotope-item="" class="col-sm-4 col-md-3 kindling web  mb25"
+								style="position: absolute; left: 877px; top: 0px;">
+								<div class="port_img port_detail_img">
+									<img class="img img-responsive" src="assets/images/portfolio_layout4.jpg"
+										alt="Portfolio-4">
+									<div class="text-left port_detail_content">
+										<h5><strong><a href="">Codificar</a></strong></h5>
+										<span>Programación</span>
+										<p class="mt5">
+											Mi hobbie favorito cuando trato de aprender más cosas.
+										</p>
+
+									</div>
+
+								</div>
+							</div>
+							<div data-isotope-item="" class="col-sm-4 col-md-3 kindling web  mb25"
+								style="position: absolute; left: 292px; top: 491px;">
+								<div class="port_img port_detail_img">
+									<img class="img img-responsive" src="assets/images/portfolio_layout5.jpg"
+										alt="Portfolio-5">
+									<div class="text-left port_detail_content">
+										<h5><strong><a href="">Codificar</a></strong></h5>
+										<span>Programación</span>
+										<p class="mt5">
+											Mi hobbie favorito cuando trato de aprender más cosas.
+										</p>
+
+									</div>
+
+								</div>
+							</div>
+							<div data-isotope-item="" class="col-sm-4 col-md-3 kindling web  mb25"
+								style="position: absolute; left: 585px; top: 552px;">
+								<div class="port_img port_detail_img">
+									<img class="img img-responsive" src="assets/images/portfolio_layout6.jpg"
+										alt="Portfolio-6">
+									<div class="text-left port_detail_content">
+										<h5><strong><a href="">Codificar</a></strong></h5>
+										<span>Programación</span>
+										<p class="mt5">
+											Mi hobbie favorito cuando trato de aprender más cosas.
+										</p>
+
+									</div>
+
+								</div>
+							</div>
+							<div data-isotope-item="" class="col-sm-4 col-md-3 kindling app  mb25"
+								style="position: absolute; left: 877px; top: 606px;">
+								<div class="port_img port_detail_img">
+									<img class="img img-responsive" src="assets/images/portfolio_layout7.jpg"
+										alt="Portfolio-7">
+									<div class="text-left port_detail_content">
+										<h5><strong><a href="">canciones</a></strong></h5>
+										<span>Música</span>
+										<p class="mt5">
+											Escuchar música de diferentes géneros
+										</p>
+
+									</div>
+
+								</div>
+							</div>
+							<div data-isotope-item="" class="col-sm-4 col-md-3 kindling ill "
+								style="position: absolute; left: 0px; top: 609px;">
+								<div class="port_img port_detail_img">
+									<img class="img img-responsive" src="assets/images/portfolio_layout8.jpg"
+										alt="Portfolio-8">
+									<div class="text-left port_detail_content">
+										<h5><strong><a href="">Lectura</a></strong></h5>
+										<span>Leer</span>
+										<p class="mt5">
+											Vivir aventuras e historias en literatura
+										</p>
+
+									</div>
+
+								</div>
+							</div>
+							<div data-isotope-item="" class="col-sm-4 col-md-3 kindling app  mb25"
+								style="position: absolute; left: 292px; top: 1029px;">
+								<div class="port_img port_detail_img">
+									<img class="img img-responsive" src="assets/images/portfolio_layout9.jpg"
+										alt="Portfolio-7">
+									<div class="text-left port_detail_content">
+										<h5><strong><a href="">canciones</a></strong></h5>
+										<span>Música</span>
+										<p class="mt5">
+											Escuchar música de diferentes géneros
+										</p>
+
+									</div>
+								</div>
+							</div>
+							<div data-isotope-item="" class="col-sm-4 col-md-3 kindling app  mb25"
+								style="position: absolute; left: 0px; top: 1123px;">
+								<div class="port_img port_detail_img">
+									<img class="img img-responsive" src="assets/images/portfolio_layout10.jpg"
+										alt="Portfolio-7">
+									<div class="text-left port_detail_content">
+										<h5><strong><a href="">canciones</a></strong></h5>
+										<span>Música</span>
+										<p class="mt5">
+											Escuchar música de diferentes géneros
+										</p>
+
+									</div>
+								</div>
+							</div>
+							<div data-isotope-item="" class="col-sm-4 col-md-3 kindling photo  mb25"
+								style="position: absolute; left: 585px; top: 1243px;">
+								<div class="port_img port_detail_img">
+									<img class="img img-responsive" src="assets/images/portfolio_layout11.jpg"
+										alt="Portfolio-7">
+									<div class="text-left port_detail_content">
+										<h5><strong><a href="">Juegos en línea</a></strong></h5>
+										<span>Videojuegos</span>
+										<p class="mt5">
+											Jugar videojuegos con mis amigos
+										</p>
+
+									</div>
+								</div>
+							</div>
+							<div data-isotope-item="" class="col-sm-4 col-md-3 kindling photo  mb25"
+								style="position: absolute; left: 877px; top: 1298px;">
+								<div class="port_img port_detail_img">
+									<img class="img img-responsive" src="assets/images/portfolio_layout12.jpg"
+										alt="Portfolio-7">
+									<div class="text-left port_detail_content">
+										<h5><strong><a href="">Juegos en línea</a></strong></h5>
+										<span>Videojuegos</span>
+										<p class="mt5">
+											Jugar videojuegos con mis amigos
+										</p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 text-left">
+							<h6> Design by <a href="http://phoenixcoded.com/" target="_blank">Phoenixcoded</a> </h6>
+						</div>
+						<div class="col-sm-6 text-right">
+							<h6> Copyright © <span id="copyright-year">2016</span>. All rights reserved </h6>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</section>
+	</main>
+
+	<!-- Warning Section Starts -->
+	<!-- Older IE warning message -->
+	<!--[if lt IE 9]>
+    <div class="ie-warning">
+        <h1>Warning!!</h1>
+        <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+        <div class="iew-container">
+            <ul class="iew-download">
+                <li>
+                    <a href="http://www.google.com/chrome/">
+                        <img src="assets/images/browser/chrome.png" alt="">
+                        <div>Chrome</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.mozilla.org/en-US/firefox/new/">
+                        <img src="assets/images/browser/firefox.png" alt="">
+                        <div>Firefox</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.opera.com">
+                        <img src="assets/images/browser/opera.png" alt="">
+                        <div>Opera</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.apple.com/safari/">
+                        <img src="assets/images/browser/safari.png" alt="">
+                        <div>Safari</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                        <img src="assets/images/browser/ie.png" alt="">
+                        <div>IE (9 & above)</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p>Sorry for the inconvenience!</p>
+    </div>-->
+	<!-- [endif]-->
+	<!-- Warning Section Ends -->
+
+	<!-- Required js -->
+	<script
+		src="assets/js/jquery.2.2.3.min.js"></script>
+	<script
+		src="assets/js/jquery.easing.min.js"></script>
+	<script
+		src="assets/js/bootstrap.min.js.descarga"></script>
+
+	<!-- Mobile Sidebar menu js  -->
+	<script
+		src="assets/js/jquery.sidebar.min.js"></script>
+
+	<!--AngularJs script start-->
+	<script
+		src="assets/angularJS/angular.min.js"></script>
+
+	<!--Module script-->
+	<script
+		src="assets/modules/PortfolioModule.js"></script>
+
+	<!--controller script-->
+	<script
+		src="assets/controllers/PortfolioController.js"></script>
+
+	<!--angular-isotope.js-->
+	<script
+		src="assets/js/jquery.isotope.js"></script>
+	<script
+		src="assets/angularJS/angular-isotope.js"></script>
+
+	<!--AngularJs script end-->
+
+</body>
+
+</html>
