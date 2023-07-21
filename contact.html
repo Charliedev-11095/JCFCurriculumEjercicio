@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="en" data-ng-app="contact" class="ng-scope">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>Boostrap CV-Contacto</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="Phoenixcoded">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="assets/images/favicon.jpg"
+		type="image/x-icon">
+	<link rel="icon" href="assets/images/favicon.jpg"
+		type="image/x-icon">
+
+	<!-- Required Framework-->
+	<link rel="stylesheet" type="text/css"
+		href="assets/css/bootstrap.min.css">
+
+	<!-- Google font & font-awasome-->
+	<link rel="stylesheet" type="text/css"
+		href="assets/css/font-awesome.min.css">
+
+	<!-- Style css -->
+	<link rel="stylesheet" type="text/css"
+		href="assets/css/style.css">
+
+	<!-- Reset css -->
+	<link rel="stylesheet" type="text/css"
+		href="assets/css/reset.css">
+
+	<!-- Responsive css -->
+	<link rel="stylesheet" type="text/css"
+		href="assets/css/responsive.css">
+
+</head>
+
+<body data-ng-controller="ContactController" class="ng-scope">
+	<div id="main_loader" style="display:flow-root;">
+		<div id="loader">
+			<div></div>
+		</div>
+	</div>
+	<nav class="cd-side-navigation sidebar left" id="myDIV" data-banner="" style="left: -94px;">
+		<ul>
+			<li>
+				<a href="index.html">
+					<span class="home_icon"></span>
+					<span>Inicio</span>
+				</a>
+			</li>
+			<li>
+				<a href="resume.html">
+					<span class="resume_icon"></span>
+					<span>Skills</span>
+				</a>
+			</li>
+			<li>
+				<a href="portfolio.html">
+					<span class="portfolio_icon"></span>
+					<span>Portfolio</span>
+				</a>
+			</li>
+			<li>
+				<a href="blog.html">
+					<span class="blog_icon"></span>
+					<span>Blog</span>
+				</a>
+			</li>
+
+			<li>
+				<a href="http:contact.html" class="selected">
+					<span class="cont_icon"></span>
+					<span>Contacto</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="sidebar-btn toggle_icon_block" data-action="toggle" data-side="left" data-ng-click="ShowHide()">
+		<div class="toggle_icon ">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+
+	<main class="cd-main">
+		<section class="cd-section contact visible">
+			<div class="container">
+				<div class="ptb-60">
+
+					<h1 class="title"> <span class="bolder">Contáctame</span></h1>
+					<p class="mb40">
+						Como parte de mi formación profesional, me he desempeñado en diferentes áreas de la informática, desde el desarrollo de software, hasta la administración de redes 
+						y servidores, pasando por el diseño y desarrollo de páginas web, así como la administración de proyectos de tecnologías de la información.
+						Desde entonces he tenido la oportunidad de trabajar en diferentes proyectos, tanto en el sector público como en el privado, por lo que me he ganado el respeto y la confianza de mis clientes.
+						<br>
+						Ya que mi lema personal es difundir y/o compartir mi conocimiento con las demás personas.
+						Si alguien tiene alguna duda o comentario, puede contactarme a través de este medio, dejando sus datos y su mensaje, y con gusto le responderé a la brevedad posible.
+					</p>
+
+					<div class="row">
+						<div class="col-sm-6">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15024.865919273949!2d-101.20221411872015!3d19.703405556415547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842d0e71bef48e3f%3A0x770ef0040a020470!2sCentro%20hist%C3%B3rico%20de%20Morelia%2C%2058000%20Morelia%2C%20Mich.!5e0!3m2!1ses-419!2smx!4v1689889367590!5m2!1ses-419!2smx" width="550" height="750" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						
+							
+						</div>
+						<div class="col-sm-6">
+							<h3>Información</h3>
+							<div class="cont_info">
+								<h5>
+									<strong>Dirección :</strong>
+									<span>Morelia, michoacán, méxico.</span>
+								</h5>
+								<h5>
+									<strong>Correo :</strong>
+									<span>crodriguez@epochteca.com</span>
+								</h5>
+								<h5 class="mb30">
+									<strong>Celular :</strong>
+									<span>(443) - 1025967</span>
+								</h5>
+							</div>
+
+							<h3>Con gusto estaré esperando tu mensaje. </h3>
+							<p class="mb30">
+								No olvides proporcionarme tus datos de contacto.
+							</p>
+							<h6 class="system_font_color mb30">Llenando todos los datos del formulario.</h6>
+
+							<form class="form-horizontal ng-pristine ng-invalid ng-invalid-required" name="Contactuser"
+								novalidate="">
+								<div class="form-group">
+									<div class="col-sm-12">
+										<input type="text"
+											class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required"
+											name="first_name" placeholder="Nombre Completo" id="first_name"
+											required="required" data-ng-model="ContactFName" data-ng-required="true">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<input type="number"
+											class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required"
+											placeholder="Teléfono." name="contact_no" id="contact_no"
+											required="required" data-ng-model="ContactNO" data-ng-required="true">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<input type="text"
+											class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required"
+											placeholder="Correo Electrónico" name="contact_email" id="contact_email"
+											required="required" data-ng-model="ContactEmail" data-ng-required="true">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<textarea
+											class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required"
+											rows="4" cols="50" placeholder="Mensaje" name="contact_message"
+											id="contact_message" required="required" data-ng-model="ContactMessage"
+											data-ng-required="true"></textarea>
+									</div>
+								</div>
+								<div class="mob_center">
+									<button class="btn system_btn" data-ng-click="send_form()">Enviar Mensaje</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6 text-left">
+							<h6> Diseñado por <a href="https://carlos-portafolio-web.vercel.app/" target="_blank">Carlos Rodríguez</a> </h6>
+						</div>
+						<div class="col-sm-6 text-right">
+							<h6> Copyright © <span id="copyright-year">2023</span> Derechos reservados. </h6>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</section>
+	</main>
+
+	<!-- Required js -->
+	<script
+		src="assets/js/jquery.2.2.3.min.js"></script>
+	<script
+		src="assets/js/jquery.easing.min.js"></script>
+	<script
+		src="assets/js/bootstrap.min.js"></script>
+
+	<!-- Mobile Sidebar menu js  -->
+	<script
+		src="assets/js/jquery.sidebar.min.js"></script>
+
+	<!--AngularJs script start-->
+
+	<script
+		src="assets/angularJS/angular.min.js"></script>
+
+	<!--Module script-->
+	<script
+		src="assets/modules/ContactModule.js"></script>
+
+	<!--controller script-->
+	<script
+		src="assets/controllers/ContactController.js"></script>
+
+	<!-- Angular-map -->
+	<script
+		src="assets/angularJS/angular-google-maps.min.js">
+	</script>
+
+		
+
+	<!--AngularJs script end-->
+
+
+</body>
+
+</html>
